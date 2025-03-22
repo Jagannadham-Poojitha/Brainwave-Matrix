@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:  repeating-conic-gradient( hwb(111 7% 32%) 10%, hsl(125, 78%, 56%) 20%);
+    background-size: 400% 400%;
+    animation: moveBackground 10s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Balance styling */
+#balance {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Form styling */
+input,
+select,
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Transaction List Styling */
+#transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Transaction Item */
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    border-left: 5px solid #4caf50;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Income and Expense Styling */
+.income {
+    border-left-color: #4caf50;
+}
+
+.expense {
+    border-left-color: #e74c3c;
+}
+
+/* Transaction Details */
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+#shape{
+    width: calc(100% -400px);
+}
+/* Amount Styling */
+.transaction-amount {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
